@@ -12,9 +12,9 @@ function getProjectImages(thumbnailSrc) {
     // Replace with logic to get actual images for the project
     const projectFolder = thumbnailSrc.match(/assets\/images\/(.*?)\//)[1];
     const imagePaths = [
-        `assets/images/${projectFolder}/img1.jpg`,
-        `assets/images/${projectFolder}/img2.jpg`,
-        `assets/images/${projectFolder}/img3.jpg`
+        `assets/images/${projectFolder}/gatito1.jpg`,
+        `assets/images/${projectFolder}/gatito2.jpg`,
+        `assets/images/${projectFolder}/gatito3.jpg`
     ];
     return imagePaths;
 }

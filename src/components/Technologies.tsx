@@ -9,7 +9,7 @@ const technologies = [
 
 const Technologies = () => (
   <section className="technologies">
-    <h2>Tecnologías</h2>
+    <h2 className="text-3xl font-bold mb-4">Tecnologías</h2>
     <ul>
       {technologies.map((tech) => (
         <li key={tech}>{tech}</li>

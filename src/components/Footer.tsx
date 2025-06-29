@@ -4,7 +4,7 @@ const Footer = () => (
       © {new Date().getFullYear()} Karen Delgado. Portafolio de Arquitectura.
     </p>
     <p>
-      Hecho con ❤️ por <a href="https://www.linkedin.com/in/nimajnebs" target="_blank" rel="noopener noreferrer">nimajnebs</a>
+      Hecho con ❤️ por <a href="https://github.com/0x360x36" target="_blank" rel="noopener noreferrer">nimajnebs</a>
       </p>
   </footer>
 )

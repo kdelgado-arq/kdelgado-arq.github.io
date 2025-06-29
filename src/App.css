@@ -24,12 +24,12 @@ body {
 }
 
 .about-photo {
-  width: 120px;
-  height: 120px;
-  aspect-ratio: 1 / 1; /* Asegura que siempre sea cuadrada */
+  width: 240px;
+  height: 240px;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #111;
+  border: 3px solid #111;
   background: #fff;
 }
 
@@ -56,10 +56,11 @@ body {
 }
 
 .project-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+  align-items: stretch;
 }
 
 .project-card {
@@ -67,6 +68,7 @@ body {
   border-radius: 10px;
   padding: 1rem;
   max-width: 260px;
+  width: 100%;
   text-align: center;
   background: #fff;
   cursor: pointer;
@@ -101,16 +103,30 @@ body {
   color: #111;
   padding: 2rem;
   border-radius: 12px;
-  max-width: 500px;
-  width: 90vw;
+  max-width: 85vw;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
   text-align: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .modal-image {
-  width: 100%;
+  width: 65vw;
+  max-width: 80vw;
+  max-height: 80vh;
+  height: 50vw;
   border-radius: 8px;
   margin-bottom: 1rem;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal-gallery {
@@ -118,6 +134,7 @@ body {
   gap: 0.5rem;
   justify-content: center;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 .modal-thumb {
@@ -127,6 +144,7 @@ body {
   border-radius: 6px;
   border: 1px solid #111;
   background: #eee;
+  cursor: pointer;
 }
 
 .modal-close {
